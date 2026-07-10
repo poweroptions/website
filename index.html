@@ -1,5 +1,455 @@
-<html>
-  <body>
-    <h2>Something is will be built here...</h2>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Power Options Uganda | Renewable Energy & Mobile App Development</title>
+
+    <meta name="description"
+        content="Power Options is a Ugandan private startup specializing in renewable energy solutions. Through its software development division, ESANYALAZE, the company develops enterprise mobile applications, business systems and mobile games.">
+
+    <meta name="keywords"
+        content="Power Options Uganda, Renewable Energy Uganda, ESANYALAZE, Mobile App Development Uganda, Enterprise Apps, Android Development">
+
+    <meta name="author" content="Power Options">
+
+    <meta property="og:title" content="Power Options Uganda">
+    <meta property="og:description"
+        content="Renewable Energy Company with a Mobile Application Development Division called ESANYALAZE.">
+    <meta property="og:type" content="website">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        html{
+            scroll-behavior:smooth;
+        }
+
+        body{
+
+            font-family:'Poppins',sans-serif;
+
+            background:
+            radial-gradient(circle at top,#12375c,#071423,#01040b);
+
+            color:white;
+            line-height:1.8;
+        }
+
+        header{
+
+            min-height:100vh;
+
+            display:flex;
+
+            align-items:center;
+
+            justify-content:center;
+
+            text-align:center;
+
+            padding:50px;
+
+            position:relative;
+
+            overflow:hidden;
+
+        }
+
+        header::before{
+
+            content:"";
+
+            position:absolute;
+
+            width:900px;
+            height:900px;
+
+            border-radius:50%;
+
+            background:rgba(0,183,255,.08);
+
+            filter:blur(60px);
+
+            animation:glow 8s infinite alternate;
+
+        }
+
+        @keyframes glow{
+
+            from{
+                transform:translate(-100px,-50px);
+            }
+
+            to{
+                transform:translate(80px,70px);
+            }
+
+        }
+
+        .hero{
+
+            max-width:900px;
+
+            position:relative;
+
+            z-index:10;
+
+        }
+
+        h1{
+
+            font-size:4rem;
+
+            color:#2fd5ff;
+
+            margin-bottom:20px;
+
+            text-shadow:0px 0px 20px rgba(0,183,255,.5);
+
+        }
+
+        .tagline{
+
+            font-size:1.5rem;
+
+            color:#ddd;
+
+            margin-bottom:35px;
+
+        }
+
+        .btn{
+
+            display:inline-block;
+
+            padding:15px 40px;
+
+            background:#00b7ff;
+
+            color:white;
+
+            text-decoration:none;
+
+            border-radius:50px;
+
+            font-weight:bold;
+
+            transition:.3s;
+
+            box-shadow:0px 0px 25px rgba(0,183,255,.5);
+
+        }
+
+        .btn:hover{
+
+            background:white;
+
+            color:#0b3f8a;
+
+            transform:translateY(-3px);
+
+        }
+
+        section{
+
+            max-width:1100px;
+
+            margin:auto;
+
+            padding:80px 25px;
+
+        }
+
+        h2{
+
+            color:#2fd5ff;
+
+            margin-bottom:20px;
+
+            font-size:2rem;
+
+        }
+
+        p{
+
+            color:#ddd;
+
+            margin-bottom:20px;
+
+        }
+
+        .grid{
+
+            display:grid;
+
+            grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+            gap:30px;
+
+            margin-top:40px;
+
+        }
+
+        .card{
+
+            background:rgba(255,255,255,.05);
+
+            padding:30px;
+
+            border-radius:18px;
+
+            border:1px solid rgba(255,255,255,.08);
+
+            transition:.4s;
+
+            backdrop-filter:blur(15px);
+
+        }
+
+        .card:hover{
+
+            transform:translateY(-8px);
+
+            box-shadow:0px 20px 40px rgba(0,183,255,.2);
+
+            border-color:#00b7ff;
+
+        }
+
+        .card h3{
+
+            color:#00d4ff;
+
+            margin-bottom:15px;
+
+        }
+
+        .contact{
+
+            background:rgba(255,255,255,.04);
+
+            border-radius:20px;
+
+            padding:40px;
+
+            border:1px solid rgba(255,255,255,.08);
+
+        }
+
+        .contact p{
+
+            margin:10px 0;
+
+        }
+
+        footer{
+
+            text-align:center;
+
+            padding:40px;
+
+            color:#aaa;
+
+            border-top:1px solid rgba(255,255,255,.1);
+
+        }
+
+        .highlight{
+
+            color:#2fd5ff;
+
+            font-weight:bold;
+
+        }
+
+        @media(max-width:768px){
+
+            h1{
+
+                font-size:2.5rem;
+
+            }
+
+            .tagline{
+
+                font-size:1.1rem;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="hero">
+
+<h1>Power Options</h1>
+
+<p class="tagline">
+
+Empowering Uganda through Renewable Energy and Innovative Mobile Technologies.
+
+</p>
+
+<a href="#about" class="btn">
+
+Learn More
+
+</a>
+
+</div>
+
+</header>
+
+<section id="about">
+
+<h2>About Power Options</h2>
+
+<p>
+
+<strong>Power Options</strong> is a private startup company based in Uganda dedicated to delivering innovative Renewable Energy solutions. The organization combines engineering expertise with modern digital technologies to improve productivity, sustainability, and operational efficiency for businesses and communities.
+
+</p>
+
+<p>
+
+As part of its digital transformation strategy, Power Options established a dedicated software and mobile application development division known as <strong>ESANYALAZE</strong>, a name loosely translated as <em>"Power"</em>.
+
+</p>
+
+</section>
+
+<section>
+
+<h2>ESANYALAZE - Mobile Development Division</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<h3>Enterprise Applications</h3>
+
+<p>
+
+Designing scalable enterprise-grade Android applications that automate business processes and improve operational efficiency.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Business Systems</h3>
+
+<p>
+
+Developing custom internal applications that streamline workflows, data collection and organizational management.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Mobile Games</h3>
+
+<p>
+
+Creating engaging mobile games alongside consumer-focused Android applications for global audiences.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Innovation</h3>
+
+<p>
+
+Leveraging modern software engineering practices to deliver secure, reliable and high-quality mobile experiences.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Our Mission</h2>
+
+<p>
+
+To contribute to Uganda's sustainable development by combining renewable energy innovation with modern mobile technologies that solve real-world challenges.
+
+</p>
+
+</section>
+
+<section>
+
+<h2>Company Information</h2>
+
+<div class="contact">
+
+<p><span class="highlight">Company:</span> Power Options</p>
+
+<p><span class="highlight">Software Development Division:</span> ESANYALAZE</p>
+
+<p><span class="highlight">Industry:</span> Renewable Energy & Mobile Application Development</p>
+
+<p><span class="highlight">Physical Address:</span> Plot 28–30 Bombo Road, Kampala, Uganda</p>
+
+<p><span class="highlight">Postal Address:</span> P.O. Box 33435, Kampala, Uganda</p>
+
+<p><span class="highlight">ICT Contact Person:</span> Ssewankambo Douglas</p>
+
+<p><span class="highlight">Email:</span> ssewankambodougla@gmail.com</p>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Google Play Developer Verification</h2>
+
+<p>
+
+This webpage serves as the official online presence of <strong>Power Options</strong> and its software development division <strong>ESANYALAZE</strong>. It provides publicly accessible information regarding the organization, its activities, physical location, and official point of contact to facilitate identity verification for online platforms including Google Play Console.
+
+</p>
+
+</section>
+
+<footer>
+
+<p>
+
+© 2026 Power Options • ESANYALAZE • Kampala, Uganda
+
+</p>
+
+</footer>
+
+</body>
+
 </html>
